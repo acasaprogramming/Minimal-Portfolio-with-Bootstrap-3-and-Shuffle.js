@@ -5,3 +5,12 @@ In this tutorial you'll learn how to build a basic responsive and filterable por
 Shuffle.JS is a free alternative to the popular Isotope plugin.
 
 [View portfolio demo here](http://acasaprogramming.ro/filterable-portfolio-with-shuffle-js-and-bootstrap-3/)
+
+####Credits####
+- [Bootstrap 3](https://getbootstrap.com/)
+- [Shuffle.JS](https://vestride.github.io/Shuffle/)
+- [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
+- [pictures from Lorempixel](http://lorempixel.com/)
+- [pictures from Lorempicsum](http://lorempicsum.com/)
+
+Tutorial by Gabi Neagu for [AcasA Programming.ro](http://acasaprogramming.ro)
