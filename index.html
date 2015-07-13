@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Filterable Portfolio with Bootstrap and Shuffle.js</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <h1 class="text-center">Filterable portfolio with Bootstrap 3 and Shuffle.js</h1>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="row">
+
+          <ul class="portfolio-sorting list-inline text-center">
+            <li><a href="#" data-group="all" class="active">All</a></li>
+            <li><a href="#" data-group="people">People</a></li>
+            <li><a href="#" data-group="simpsons">Simpsons</a></li>
+            <li><a href="#" data-group="futurama">Futurama</a></li>
+          </ul> <!--end portfolio sorting -->
+
+          <ul class="portfolio-items list-unstyled" id="grid">
+
+            <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["people"]'>
+              <figure class="portfolio-item">
+                <a href="#">
+                  <img src="http://lorempixel.com/700/400/people/1" alt="Item 1" class="img-responsive">
+                </a>
+              </figure>
+            </li>
+
+            <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["people"]'>
+                <figure class="portfolio-item">
+                    <a href="#">
+                        <img src="http://lorempixel.com/700/400/people/7" alt="" class="img-responsive">
+                    </a>
+                </figure>
+            </li>
+
+           <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["futurama"]'>
+              <figure class="portfolio-item">
+                  <a href="#">
+                      <img src="http://lorempicsum.com/futurama/700/400/1" alt="" class="img-responsive">
+                  </a>
+              </figure>
+            </li>
+
+            <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["futurama"]'>
+              <figure class="portfolio-item">
+                  <a href="#">
+                      <img src="http://lorempicsum.com/futurama/700/400/2" alt="" class="img-responsive">
+                  </a>
+              </figure>
+            </li>
+
+            <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["simpsons", "people"]'>
+              <figure class="portfolio-item">
+                  <a href="#">
+                      <img src="http://lorempicsum.com/simpsons/700/400/1" alt="" class="img-responsive">
+                  </a>
+              </figure>
+            </li>
+
+            <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["simpsons"]'>
+              <figure class="portfolio-item">
+                  <a href="#">
+                      <img src="http://lorempicsum.com/simpsons/700/400/3" alt="" class="img-responsive">
+                  </a>
+              </figure>
+            </li>
+
+            <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["people"]'>
+                <figure class="portfolio-item">
+                    <a href="#">
+                        <img src="http://lorempixel.com/700/400/people/9" alt="" class="img-responsive">
+                    </a>
+                </figure>
+            </li>
+
+             <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["simpsons"]'>
+              <figure class="portfolio-item">
+                  <a href="#">
+                      <img src="http://lorempicsum.com/simpsons/700/400/4" alt="" class="img-responsive">
+                  </a>
+              </figure>
+            </li>
+
+            <li class="col-md-4 col-sm-4 col-xs-6" data-groups='["futurama"]'>
+              <figure class="portfolio-item">
+                  <a href="#">
+                      <img src="http://lorempicsum.com/futurama/700/400/5" alt="" class="img-responsive">
+                  </a>
+              </figure>
+            </li>
+
+
+            <!-- sizer -->
+            <li class="col-md-4 col-sm-4 col-xs-6 shuffle_sizer"></li>
+
+            
+          </ul> <!--end portfolio grid -->
+
+
+          </div> <!--end row -->
+        </div> <!-- end container-->
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">   
+          
+          <div class="col-md-4 column">
+            <h4>AcasA Programming</h4>
+            <p>A tutorial by <a href="http://acasaprogramming.ro">AcasA Programming</a></p>
+            <ul class="social-icons list-inline">
+              <li><a href="https://www.youtube.com/channel/UCBGItdbB-5Yma5X6FK_hYBA" class="youtube"><span class="fa fa-youtube"></span></a></li>
+              <li><a href="https://www.facebook.com/acasaprogramming" class="facebook"><span class="fa fa fa-facebook"></span></a></li>
+              <li><a href="https://github.com/acasaprogramming" class="github"><span class="fa fa-github"></span></a></li>
+            </ul>
+            
+          </div>
+
+
+          <div class="col-md-4 column">
+            <h4>Credits</h4>
+            <ul class="list-unstyled">
+              <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="https://getbootstrap.com/">Bootstrap 3</a></li>
+              <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="https://vestride.github.io/Shuffle/">Shuffle.js</a></li>
+              <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="http://benalman.com/projects/jquery-throttle-debounce-plugin/" target="_blank">jQuery throttle / debounce</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 column">
+            <h4>Images by:</h4>
+            <ul class="list-unstyled">
+              <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="http://lorempixel.com/">Lorempixel</a></li>
+              <li><span class=" glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="http://lorempicsum.com/">Lorempicsum</a></li>
+            </ul>
+          </div>
+
+        </div> <!--end row -->
+      </div> <!-- end container-->
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
